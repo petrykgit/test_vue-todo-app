@@ -1,38 +1,50 @@
-# vue-todo-app
+ToDo App
 
-This template should help get you started developing with Vue 3 in Vite.
+1. Live Preview
+[DEMO LINK](https://petrykgit.github.io/test_vue-todo-app/)
 
-## Recommended IDE Setup
+2. Design Reference
+This project implements a clean, modern, and highly functional ToDo list interface, focusing on exceptional user experience.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+3. Technologies Used
+- Vue 3	- A progressive JavaScript framework used for building a reactive and performant user interface.
+- Vite	- Used for lightning-fast development tooling and highly optimized production builds.
+- SCSS	- Provides powerful features like variables and nesting for organized and maintainable stylesheets.
+- Axios - A promise-based HTTP client used for efficient communication with the backend API.
 
-## Recommended Browser Setup
+4. Getting Started
+Follow these steps to set up and run the ToDo application locally.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Prerequisites
+- Node.js
+- npm
 
-## Customize configuration
+Installation
+Clone the repository:
+- git clone https://github.com/petrykgit/test_vue-todo-app/
+- cd test_vue-todo-app
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Install dependencies:
+- npm install
 
-## Project Setup
+Running the Project.
+Start the development server:
+- npm run dev
 
-```sh
-npm install
-```
+*The app will be available at `http://localhost:5173/`*
 
-### Compile and Hot-Reload for Development
+Build for Production:
+- npm run build
 
-```sh
-npm run dev
-```
+*The optimized files will be generated in the `dist/` directory.*
 
-### Compile and Minify for Production
+5. Features.
+This application showcases robust full CRUD functionality and advanced UI/UX practices for handling asynchronous operations:
 
-```sh
-npm run build
-```
+- Full CRUD Functionality: Seamlessly Create, Read, Update (toggle completion, edit title), and Delete tasks.
+- API Interaction Management: Efficiently handles asynchronous operations, preventing race conditions and ensuring data integrity.
+- Visual Feedback: Incorporates loaders (spinners) and notifications to provide clear user feedback during ongoing API calls (adding, updating, deleting).
+- Task Filtering: Users can filter the list to view all tasks, active tasks, or completed tasks.
+- Toggle All: Single action to mark all tasks as completed or active.
+- Clear Completed: Dedicated action to efficiently delete all completed tasks.
+- Clean Architecture: Built with an emphasis on clean code, custom hooks (useTodos, useErrorNotification, useTodosFiltering), and strong TypeScript contracts for enhanced maintainability.
